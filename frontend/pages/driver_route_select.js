@@ -18,10 +18,10 @@ export default function DriverRouteSelect() {
 
                 <div id="selectRoute" 
                 className="items-center bg-white shadow-md rounded-md flex flex-col gap-3 p-6">
-                    <h1>Select Your Shuttle</h1>bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400
-                    <a id="doermerButton" className="">Doermer</a>
-                    <a id="canterburyButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Canterbury Green</a>
-                    <a id="housingButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Housing</a>
+                    <h1>Select Your Shuttle</h1>
+                    <a href="/driver_portals/cantebury_portal" id="canterburyButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Canterbury Green</a>
+                    <a href="/driver_portals/doermer_portal" id="doermerButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Doermer</a>
+                    <a href="/driver_portals/housing_portal" id="housingButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Housing</a>
                 </div>
             </main>
             <Footer></Footer>
