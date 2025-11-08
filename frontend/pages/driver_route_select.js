@@ -6,25 +6,21 @@ them to the appropiate websites. For the demo, a driver
 dummy acount will need to be made to access the driver
 portals.*/
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
 export default function DriverRouteSelect() {
     return (
         <div className="flex flex-col min-h-screen">
-            <Navbar></Navbar>
+            
             <main 
-            className="container mx-auto bg-white items-center flex flex-col flex-grow pt-40">
+            className=" w-full mx-auto bg-white items-center flex flex-col flex-grow pt-100 ">
 
                 <div id="selectRoute" 
                 className="items-center bg-white shadow-md rounded-md flex flex-col gap-3 p-6">
-                    <h1>Select Your Shuttle</h1>
-                    <a href="/driver_portals/cantebury_portal" id="canterburyButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Canterbury Green</a>
-                    <a href="/driver_portals/doermer_portal" id="doermerButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Doermer</a>
-                    <a href="/driver_portals/housing_portal" id="housingButton" className="bg-[#cfb991] text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-400">Housing</a>
+                    <h1 className="text-black text-xl font-semibold">Select Your Shuttle</h1>
+                    <a href="/driver_portals/canterbury_portal" id="canterburyButton" className="bg-[#3b82f6] text-black font-semibold px-6 py-3 rounded-md hover:bg-blue-100">Canterbury Green</a>
+                    <a href="/driver_portals/doermer_portal" id="doermerButton" className="bg-[#3b82f6] text-black font-semibold px-6 py-3 rounded-md hover:bg-blue-100">Doermer</a>
+                    <a href="/driver_portals/housing_portal" id="housingButton" className="bg-[#3b82f6] text-black font-semibold px-6 py-3 rounded-md hover:bg-blue-100">Housing</a>
                 </div>
             </main>
-            <Footer></Footer>
         </div>
     );
 }

@@ -7,10 +7,11 @@ housing shuttle usually goes to Walb (0), and the Housing building(1).*/
 the changes made from driverControls and eventually to the student portal.*/
 
 
-export default function DriverDashboard({ controlOptions, shuttle}) {
+export default function DriverDashboard({ controlOptions, shuttle }) {
     const [sharingEnabled, setSharingEnabled] = useState(false);
     const [selectedRoute, setSelectedRoute] = useState(controlOptions[0]);
     const [driverStatus, setDriverStatus] = useState("Idle");
+    const name = "John Doe"
 
     const handleLocationSharing = () => {
         if (!sharingEnabled) {
@@ -45,7 +46,11 @@ export default function DriverDashboard({ controlOptions, shuttle}) {
     return (
         <div className="pt-3 pb-3 bg-white shadow-md rounded-md">
             {/*Driver Status Pannel*/}
+
             <div className="bg-white rounded-md flex flex-col gap-3 p-6">
+                {/*name will be retrieved possibly form an api call. Passed in during the
+    auth/login process.*/}
+                <h1 className="text-3xl font-bold text-black mb-6">Welcome, {name}.</h1>
                 <h1 className="text-black font-bold">Driver Status</h1>
 
                 <div className="pt-3 pb-3 border-t border-gray-200">
